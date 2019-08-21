@@ -1,0 +1,25 @@
+@tailwind base;
+
+@tailwind components;
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+[id^=layerItem-].active, [class*=builderEl-].active {
+	outline: 2px dashed black;
+}
+
+[id^=layerItem-].active span {
+	@apply font-bold text-black
+}
+
+#builderAdd, #builderEdit {
+	@apply bg-gray-500 cursor-auto
+}
+
+#builderAdd.active, #builderEdit.active {
+	@apply bg-blue-500 cursor-pointer
+}
+
+@tailwind utilities;
